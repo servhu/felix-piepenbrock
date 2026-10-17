@@ -8,6 +8,6 @@ Statische Website von Felix Piepenbrock (SEO & SEA, Online-Marketing).
 
 ## Offene Punkte vor dem Livegang
 
-- E-Mail, Telefon und ggf. USt-ID eintragen (gelb markiert in `index.html` und `impressum.html`).
+- Telefon und ggf. USt-ID eintragen (gelb markiert in `index.html` und `impressum.html`).
 - Datenschutzerklärung prüfen lassen.
 - Artikel in `news/` gegenlesen und den Hinweis „Entwurf“ entfernen.
