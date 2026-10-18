@@ -53,6 +53,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;op
   -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 38%);mask-image:linear-gradient(to right,transparent 0%,#000 38%)}
 .hero-img img{width:100%;height:100%;object-fit:cover;object-position:60% 20%}
 .hero h1{font-size:clamp(3.6rem,13.5vw,12.5rem)}
+@media (max-width:380px){.hero h1{font-size:clamp(2.9rem,15vw,3.6rem)}.kicker{letter-spacing:.12em;font-size:.72rem}}
 .hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
 .hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:40px;flex-wrap:wrap}
 .hero-foot p{max-width:30em;margin:0;font-size:1.15rem;color:var(--soft)}
@@ -149,7 +150,8 @@ section{padding:clamp(80px,12vw,150px) 0}
 
 footer{padding:28px 0 40px;color:var(--soft);font-size:.88rem}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-footer a{text-decoration:none;margin-left:22px}
+footer a{text-decoration:none;margin-left:22px;display:inline-block;padding:8px 0}
+@media (max-width:560px){footer a{margin-left:0;margin-right:22px}}
 footer a:hover{color:var(--lime)}
 
 .todo{background:var(--lime);color:var(--lime-ink);padding:0 .3em;border-radius:4px}
