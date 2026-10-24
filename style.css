@@ -98,7 +98,7 @@ section{padding:clamp(80px,12vw,150px) 0}
 .statement{background:var(--bg-2)}
 .statement p{font:700 clamp(2rem,5vw,4.2rem)/1.08 var(--display);letter-spacing:-.035em;margin:0;max-width:18em}
 .statement p em{font-style:normal;color:var(--lime)}
-.statement .mute{color:rgba(243,241,234,.32)}
+.statement .mute{color:rgba(243,241,234,.5)}
 
 /* Zusammenarbeit */
 .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:28px;overflow:hidden}
@@ -188,7 +188,7 @@ html,body{overflow-x:clip}
 .post:hover{transform:translateY(-6px);background:var(--lime);color:var(--lime-ink)}
 .post:hover .meta,.post:hover p{color:var(--lime-ink)}
 .post .meta{font:500 .78rem/1 var(--text);letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-.post h3{font:700 1.55rem/1.12 var(--display);letter-spacing:-.025em;margin:22px 0 12px}
+.post h3,.post h2{font:700 1.55rem/1.12 var(--display);letter-spacing:-.025em;margin:22px 0 12px}
 .post p{color:var(--soft);font-size:.97rem;margin:0}
 .post .more{margin-top:26px;font-weight:500}
 @media (max-width:980px){.posts{grid-template-columns:1fr}.post{min-height:0}}
@@ -208,3 +208,16 @@ html,body{overflow-x:clip}
 .draft{display:inline-block;background:var(--lime);color:var(--lime-ink);font:500 .82rem/1.4 var(--text);padding:.5em .9em;border-radius:10px;margin-bottom:24px}
 .news-list{max-width:var(--max);margin:0 auto;padding:150px var(--pad) 60px}
 .news-list h1{font:900 clamp(3rem,10vw,8rem)/.9 var(--display);letter-spacing:-.045em;margin:0 0 60px}
+
+/* Titelgrafik für Artikel */
+.cover{position:relative;overflow:hidden;aspect-ratio:1200/630;border-radius:24px;margin:0 0 36px;background:var(--bg-2);border:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,4vw,44px);isolation:isolate}
+.cover::before{content:"";position:absolute;width:34%;aspect-ratio:1;right:-9%;top:-30%;border-radius:50%;background:var(--lime);z-index:-1}
+.cover::after{content:"";position:absolute;width:44%;aspect-ratio:1;left:-12%;bottom:-48%;border-radius:50%;border:2px solid rgba(215,255,60,.5);z-index:-1}
+.cover .tag{align-self:flex-start;margin:0}
+.cover .cv-title{font:900 clamp(1.1rem,4.2vw,2.5rem)/1.02 var(--display);letter-spacing:-.04em;color:var(--ink);margin:0;max-width:80%;text-wrap:balance}
+.cover .cv-logo{font:900 clamp(.8rem,1.8vw,1.1rem)/1 var(--display);letter-spacing:-.03em;color:var(--ink)}
+.cover .cv-logo span{color:var(--lime)}
+.article .meta+.cover{margin-top:22px}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
