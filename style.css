@@ -98,7 +98,7 @@ section{padding:clamp(80px,12vw,150px) 0}
 .statement{background:var(--bg-2)}
 .statement p{font:700 clamp(2rem,5vw,4.2rem)/1.08 var(--display);letter-spacing:-.035em;margin:0;max-width:18em}
 .statement p em{font-style:normal;color:var(--lime)}
-.statement .mute{color:rgba(243,241,234,.32)}
+.statement .mute{color:rgba(243,241,234,.5)}
 
 /* Zusammenarbeit */
 .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:28px;overflow:hidden}
@@ -188,7 +188,7 @@ html,body{overflow-x:clip}
 .post:hover{transform:translateY(-6px);background:var(--lime);color:var(--lime-ink)}
 .post:hover .meta,.post:hover p{color:var(--lime-ink)}
 .post .meta{font:500 .78rem/1 var(--text);letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-.post h3{font:700 1.55rem/1.12 var(--display);letter-spacing:-.025em;margin:22px 0 12px}
+.post h3,.post h2{font:700 1.55rem/1.12 var(--display);letter-spacing:-.025em;margin:22px 0 12px}
 .post p{color:var(--soft);font-size:.97rem;margin:0}
 .post .more{margin-top:26px;font-weight:500}
 @media (max-width:980px){.posts{grid-template-columns:1fr}.post{min-height:0}}
